@@ -26,4 +26,7 @@ fn main() {
     let concentration = mass / volume;
 
     println!("The concentration of the solution is {} g/L", concentration);
+
+    let mut buffer = String::new();
+    std::io::stdin().read(&mut buffer).expect("Failed to read from stdin");
 }
